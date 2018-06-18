@@ -1,0 +1,237 @@
+<!doctype html>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>BMW : Sheer Driving Pleasure</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>BMW 4 Series</title>
+	<link href="path/to/lightbox.css" rel="stylesheet">
+	<style>
+		*{font-family: 'Roboto', sans-serif; margin:0; padding:0;}
+		ul, ol, li {list-style: none;}
+		a {text-decoration: none; color:black;}
+
+		p{font-size: 40px; line-height: 1.7; color: black;}
+		h1{font-size: 2.2em; line-height: 1.7; color: white;}
+		header{width: 1400px;  position:relative; background: }
+		header .b11{width:1400px; position: relative; left: 50%; transform: translateX(-50%);}
+		header nav {position: absolute; top:17px;left: 50px}
+		header nav ul {width:500px;  position: absolute;}
+		header nav ul li {float: left; width:90px; ;}
+
+		.mcontain {width:1400px; margin:0 auto;}
+		.sec1 {position: relative;}
+		.bmw02 {position: relative; left: 50%; transform: translateX(-50%); z-index: -99}
+		.iwrap1 {position: absolute;  top:70px; left:402px; font-size: 55px; line-height: 54px; font-weight: bold;}
+		.iwrap2 {position: absolute; top:45px; right:165px; width:500px; text-align : right; font-size: 20px; line-height: 26px;}
+		.iwrap3 {position: absolute; top:807px; left:160px; right:300px; font-size: 20px; line-height: 28px;}
+
+		.sec2 {position: relative; top:-5px;}
+		.sec2 .dmore1 {width:90%; height:90vh; background: url("design01.jpg") no-repeat 50% 50%; background-size: cover; z-index: -99; position: absolute; left:50%; top:0; transform: translateX(-50%); opacity: 0;}
+		.bmw09 {position: absolute; top:418px;right:161px;}
+		.bmw03 {position: relative; left: 50%; transform: translateX(-50%); z-index: -99}
+		
+	
+		.iwrap4 {position: absolute;  top:540px; left:402px; font-size: 35px; line-height: 43px; font-weight: bold;}
+		.iwrap5 {position: absolute; top:693px; right:165px; width:500px; text-align : right; font-size: 20px; line-height: 26px;}
+		.iwrap6 {position: absolute; top:1290px; left:405px; right:160px; font-size: 20px; line-height: 27px;}
+
+		.sec4 {position: relative; top:-10px;}
+		
+		
+		.sec3 {position: relative; top:-10px;}
+		.sec3 .demore{width:90%; height: 90vh; background:url("exterior01.jpg") no-repeat 50% 50%; background-size: cover; position: absolute; left:50%; top:0; transform: translateX(-50%);  opacity: 0; }
+		.sec3 .dimore{width:90%; height: 90vh; background:url("exterior02.jpg") no-repeat 50% 50%; background-size: cover; position: absolute; left:50%; top:0; transform: translateX(-50%);  opacity: 0; }
+		.bm04
+		.bmw05 {position: relative; left: 50%; transform: translateX(-50%); z-index: -99;}
+		.emore1 {position: absolute; top:188px; right: 1024px; background:red; z-index: 99;}
+		.bmw11 {position: absolute; top:282px;right: 1024px;}
+		.iwrap7 {position: absolute;  top:30px; left:160px; right:240px; font-size: 20px; line-height: 26px;}
+		.iwrap8 {position: absolute; top:465px; left:715px; width:500px; text-align : left; font-size: 35px; line-height: 41.5px; font-weight: bold;}
+		.iwrap9 {position: absolute; top:652px; left:715px; right:430px; font-size: 20px; line-height: 28px;}
+		.iwrap10 {position: absolute; top:950px; left:715px; right:430px; font-size: 20px; line-height: 28px;}
+		
+		.slide {width: 1400px; overflow: hidden; position:relative;} 
+		.slide img {z-index: -99;}
+		.slide ul {width: 5600px;}
+		.slide ul li {float: left; cursor: pointer;}
+		.slide .bt {width: 200px; position: absolute; bottom: 20px; left:50%; transform: translateX(-50%); z-index: 2;}
+		.slide .bt li {width: 30px; height: 30px; border-radius:15px; background: white; margin:0 10px ; z-index: 2;}
+
+		
+	</style>
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	<script>
+		<!--
+			$(document).ready(function(){
+				$(".slide .bt li").click(function(){
+					var i = $(this).index();
+					$(".slide .bt li").css({"background":"white"});
+					$(this).css({"background":"gray"});
+					$(".slide .iw").stop().animate({"margin-left":-1400*i});
+				});
+
+				$(".more1").click(function(){
+					$(".dmore1").animate({"opacity":1,"z-index":99});
+				});
+
+				$(".dmore1").click(function(){
+					$(".dmore1").animate({"opacity":0,"z-index":-99});
+				});
+
+				
+
+				$(".sec3 .emore1").click(function(){
+					$(this).animate({"opacity":0});
+					$(".imore").animate({"opacity":0});
+					$(".demore").animate({"opacity":1,"z-index":99});
+				});
+
+				$(".demore").click(function(){
+					$(".sec3 .emore1").animate({"opacity":1});
+					$(".imore").animate({"opacity":1});
+					$(".demore").animate({"opacity":0,"z-index":-99});
+				});
+
+				$(".sec3 .imore1").click(function(){
+					$(".emore1").animate({"opacity":0});
+					$(this).css({"opacity":0});
+
+					$(".dimore").animate({"opacity":1,"z-index":99});
+				});
+
+				$(".dimore").click(function(){
+					$(".emore1").animate({"opacity":0});
+					$(".sec3 .imore1").animate({"opacity":1});
+					$(".dimore").animate({"opacity":0,"z-index":-99});
+				});
+
+				
+			});
+		//-->
+	</script>
+</head>
+<body>
+	<div class='mcontain'>
+	<header>
+		<img class='b11' src="bm01.jpg">
+		<nav>
+			<ul>
+				<a href='https://www.bmw.com/en/index.html'><li>Home</li></a>
+				<a href='https://www.bmw.com/en/bmw-models.html'><li>Models</li></a>
+				<a href='https://www.bmw.com/en/design.html'><li>Performance</li></a>
+			</ul>
+ 
+	</header>
+
+	<section class='sec1'>
+		<div class='bmw02'>
+			<img src='bm02.jpg'/>
+		</div>
+		
+		<div  class='iwrap1'>
+				BMW <br/>4 Series
+			</div>
+			<div  class='iwrap2'>
+				The BMW 4 Series Coupé can deliver breathtaking 
+				dynamics that instantly catches you.a>
+				<a href='1.webp'>Design</a>
+		</nav> 
+				Experience it for yourself – and discover what it 
+				is about the BMW 4 Series Coupé that takes 
+				your breath away.
+			</div>
+
+		<div class='iwrap3'>
+			The values of fuel consumptions, CO2 emissions and energy consumptions shown were <br> determined according to the European Regulation (EC) 715/2007 in the version applicable <br> at the time of type approval. The figures refer to a vehicle with basic configuration in Germany <br> and the range shown considers optional equipment and the different size of wheels and tires <br> available on the selected model. The values of some vehicles are already based on the new <br> WLTP regulation and are translated back into NEDC-equivalent values in order to ensure the <br> comparison between the vehicles. The CO2 efficiency specifications are determined according <br> to Directive 1999/94/EC and the European Regulation in its current version applicable. 
+		</div>
+
+	</section>
+	<section class='sec2'>
+			
+		<div class='bmw03'>
+			<img src='bm03.jpg'/>
+		</div>
+		<div  class='iwrap4'>
+				5 Good Reasons for the <br/> BMW 4 Series Coupe
+			</div>
+		<div class='bmw09'>
+			
+			<img class='more1' src='designmore.jpg'/>
+		</div>	
+			<div  class='iwrap5'>
+				1. An expressive shape for an athletic sports coupé
+				2. One-of-a-kind handling thanks to low centre of gravity
+				3. Driving Experience Control offers even sportier driving modes
+				4. BMW Head-Up Display increases concentration on driving
+				5. Progressive LED light design
+
+			</div>
+			<div class='iwrap6'>
+				The values shown are based on the fuel consumption, CO2 values and energy consumptions according to the NEDC cycle for the classification. For further information about the official fuel consumption and the specific CO2 emission of new passenger cars can be taken out of the „handbook of fuel consumption, the CO2 emission and power consumption of new passenger cars“, which is available at all selling points. 
+				Detailed information on the technical data can Tbe found on your BMW country page.
+			</div>
+			<div class='dmore1'></div>	
+	</section>
+
+	<section class='sec4'>				
+		<div class='bmw04'>		
+				<div class='slide'>
+					<ul class='iw'>
+						<li><img src='bm05.jpg'/></li>
+						<li><img src='bm05555.jpg'/></li>
+						<li><img src='bm055.jpg'>/</li>
+						<li><img src='bm0555.jpg'/></li>
+					</ul>
+					<ul class='bt'>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul> 
+				</div>
+		</div>	
+	</section>	
+
+	<section class='sec3'>	
+		
+			
+		<div class='bmw05'>
+			<img src='bm04.jpg'/>
+			<div  class='iwrap7'>
+				The preview of the first model within the 4 series – the BMW Concept 4 Series Coupé – was already fascinating when it debuted in 2013 with expressive proportions that promised an unadulterated driving machine.
+			</div>
+
+			
+			
+			<div  class='iwrap8'>
+				Precise, finely balanced and incredibly agile: the 4 Series drives exactly like you’d expect from a BMW Coupé.
+			</div>
+
+			<div class='iwrap9'>
+				German car magazine 
+				"AUTO BILD Digital" tested 
+				the BMW 4 Series Coupé.
+			</div>
+			<div class='iwrap10'>
+				Designed <br>
+				by Cho Jae Yun
+			</div>
+			<div class="demore"></div>
+			<div class="dimore"></div>
+			
+		</div>
+		<div class='bmw11'>
+				<img class='imore1' src='interiormore.jpg'/>
+		</div>
+		<div class='bmw10'>
+			<img class='emore1' src='exteriormore.jpg'/>
+		</div>
+	</section>
+</div>
+</body>
+
+</html>7
